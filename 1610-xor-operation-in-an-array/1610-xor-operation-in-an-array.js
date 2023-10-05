@@ -8,9 +8,10 @@ var xorOperation = function(n, start) {
     for(let i=0;i<n;i++){
         nums[i] = start+2*i;
     }
-    let t = 0;
-    for(let j=0;j<nums.length;j++){
-       t = t ^ nums[j]
-    }
+    // let t = 0;
+    // for(let j=0;j<nums.length;j++){
+    //    t = t ^ nums[j]
+    // }
+    let t = nums.reduce((t,x)=>t= t^x)
     return t;
 };
